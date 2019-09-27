@@ -11,9 +11,10 @@
 
 <body>
     <header>
+        <?php include ("navbar_gen.php"); ?>
     </header>
 
-    <div class="title"><h1>CS 313 Assignments</h1></div>
+    <div class="title">CS 313 Assignments</div>
     <div class="bodyBox">links will appear here when they are available</div>
 
     <footer>

@@ -11,8 +11,10 @@
 
 <body>
     <header>
-        <h1>Tori Fife</h1>
+        <?php include ("navbar_gen.php"); ?>
     </header>
+  
+    <div class="title">FIF-101 Intro to Tori</div>
 
     <div class="bodyBox">
       <h2>About Me:</h2>

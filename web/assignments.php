@@ -11,9 +11,9 @@
 
 <body>
     <header>
-        <h1>CS 313 Assignments</h1>
     </header>
 
+    <div class="title"><h1>CS 313 Assignments</h1></div>
     <div class="bodyBox">links will appear here when they are available</div>
 
     <footer>

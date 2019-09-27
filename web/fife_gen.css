@@ -1,42 +1,46 @@
 #navbar {
-  list-style-type: none;
-  overflow: hidden;
+    list-style-type: none;
+    overflow: hidden;
 }
 #navbar li {
-  float: left;
+    float: left;
 }
 #navbar li a {
-  display: block;
-  font-size: 20px;
-  font-weight: bold;
-  color: purple;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: purple;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
   }
 #navbar li a:hover {
-  background-color: thistle;
-  color: white;
-  text-shadow: 0 0 3px black;
+    background-color: thistle;
+    color: white;
+    text-shadow: 0 0 3px black;
 }
 
 header {
-width: 100%;
-height: auto;
-color: purple;
-background-color: ghostwhite;
+    width: 100%;
+    height: auto;
+    color: purple;
+    background-color: ghostwhite;
 }
 
 .title {
-    margin: 0 5%;
-    padding: 5%;
+    background-color: purple;
+    color: white;
+    margin: 0;
+    padding: 10px 5%;
+    margin: 0 0 10px 0;
     width: 90%;
-    margin: auto;
+    font-size: 30px;
 }
 
 .bodyBox {
     margin: auto;
-    width: 90%;
+    padding: 20px 5%;
+    width: 85%;
     border: 1px dashed purple;
 }
 
@@ -52,6 +56,5 @@ footer {
 
 @media screen and (min-width: 800px) {
     .bodyBox {
-        padding: 10%;
     }
 }

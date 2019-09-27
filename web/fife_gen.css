@@ -1,0 +1,17 @@
+.bodyBox {
+    margin: auto;
+    width: 90%;
+    padding: 5%;
+    border: 1px dashed purple;
+}
+
+footer {
+    text-align: center;
+    font-size: small;
+}
+
+@media screen and (min-width: 800px) {
+    .bodyBox {
+        padding: 10%;
+    }
+}

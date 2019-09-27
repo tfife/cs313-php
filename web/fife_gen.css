@@ -1,6 +1,7 @@
 .bodyBox {
-    width: 90%;
+    margin: 0 5%;
     padding: 5%;
+    width: 90%;
     border: 1px dashed purple;
 }
 

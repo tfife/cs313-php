@@ -1,4 +1,4 @@
 <ul id="navbar">
-        <li><a>Home</a></li>
-        <li><a>Assignments</a></li>
+        <li><a href="homepage.php">Home</a></li>
+        <li><a href="assignments.php">Assignments</a></li>
 </ul>

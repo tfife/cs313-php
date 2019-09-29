@@ -51,8 +51,9 @@ header {
     border: 1px dashed indigo;
 }
 
-h1 {
+h2 {
     color: indigo;
+    text-shadow: 0 0 3px white;
 }
 
 footer {

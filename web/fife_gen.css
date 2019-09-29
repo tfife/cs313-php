@@ -98,7 +98,6 @@ footer {
   .dioBox {
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
   }
 
   .medPic {

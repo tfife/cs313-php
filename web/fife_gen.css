@@ -98,6 +98,7 @@ footer {
   .dioBox {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
   }
 
   .medPic {
@@ -106,8 +107,8 @@ footer {
       padding: 5px;
   }
   .medTextbox {
-      height: 400px;
-      width: auto;
+      height: 300px;
+      width: 300px;
       background-color: white;
   }
 

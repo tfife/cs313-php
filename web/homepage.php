@@ -11,8 +11,7 @@
     <style>
         .title span {
             font-size: 50px;
-            font-family: "curlz mt";
-            color: magenta;
+            font-family: "Segoe Script";
             text-shadow: 0 0 5px darkturquoise;
         }
     </style>

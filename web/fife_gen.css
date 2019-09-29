@@ -12,14 +12,14 @@
     display: block;
     font-size: 20px;
     font-weight: bold;
-    color: purple;
+    color: indigo;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     border-right: 1px solid thistle;
   }
 #navbar li a:hover {
-    background-color: purple;
+    background-color: indigo;
     color: white;
     text-shadow: 0 0 3px black;
 }
@@ -27,12 +27,12 @@
 header {
     width: 100%;
     height: auto;
-    color: purple;
+    color: indigo;
     background-color: ghostwhite;
 }
 
 .title {
-    background-color: purple;
+    background-color: indigo;
     color: white;
     margin: 0;
     padding: 10px 5%;
@@ -44,12 +44,12 @@ header {
 .bodyBox {
     margin: auto;
     padding: 20px 5%;
-    width: 85%;
-    border: 1px dashed purple;
+    width: 70%;
+    border: 1px dashed indigo;
 }
 
 h1 {
-    color: purple;
+    color: indigo;
 }
 
 footer {
@@ -60,7 +60,7 @@ footer {
 
 .flexgroup {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -95,7 +95,5 @@ footer {
   }
 
 @media screen and (min-width: 800px) {
-    .flexgroup {
-        flex-direction: row;
-    }
+
 }

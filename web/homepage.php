@@ -44,15 +44,15 @@
             <img class="medPic" src="images/create_paint.jpg" alt="painting">
         </div>
     </div>
-    <div class="dioBox" style="background-color: indigo">
+    <div class="dioBox" style="background-color: gold">
         <div>
-            <img class="medPic" src="images/create_crochet" alt="crochet dragon">
+            <img class="medPic" src="images/create_crochet.jpg" alt="crochet dragon">
         </div>
         <div>
-            <img class="medPic" src="images/create_pumpkin" alt="Pumpkin of the Restoration">
+            <img class="medPic" src="images/create_pumpkin.jpg" alt="Pumpkin of the Restoration">
         </div>
         <div>
-            <img class="medPic" src="images/create_cookies" alt="Halloween cookies">
+            <img class="medPic" src="images/create_cookies.jpg" alt="Halloween cookies">
         </div>
     </div>
 

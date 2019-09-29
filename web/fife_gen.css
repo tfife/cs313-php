@@ -99,17 +99,19 @@ footer {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-evenly
   }
 
   .medPic {
       height: 400px;
       width: auto;
-      padding: 5px;
+      margin: 5px;
   }
   .medTextbox {
       height: 300px;
       width: 300px;
-      background-color: white;
+      background-color: rgba(255, 255, 255, 0.295);
+      margin: 5px;
   }
 
 @media screen and (min-width: 800px) {

@@ -10,7 +10,10 @@
 
     <style>
         .title span {
+            font-size: 50px;
             font-family: "curlz mt";
+            color: magenta;
+            text-shadow: 0 0 5px darkturquoise;
         }
     </style>
 </head>

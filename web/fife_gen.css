@@ -55,7 +55,6 @@ h1 {
 
 footer {
     text-align: center;
-    color: white;
     font-size: small;
 }
 
@@ -104,13 +103,14 @@ footer {
       padding: 30px;
       border-radius: 30px;
       width: 70%;
-      margin: auto;
+      margin: 10px auto;
   }
 
   .medPic {
+      color: white;
       height: 400px;
       width: auto;
-      margin: 10px;
+      padding: 10px;
   }
   .medTextbox {
       height: 300px;

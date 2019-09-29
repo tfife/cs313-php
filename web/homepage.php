@@ -25,7 +25,14 @@
     <div class="title">Every Day <span>Create!</span></div>
 
     <div class="bodyBox">
-      <h2>About Me:</h2>
+      <div class="dioBox">
+          <div>
+
+          </div>
+          <div>
+              <img src="images/create_clay.jpg" alt="clay gnome">
+          </div>
+    </div>
     </div>
 
     <footer>

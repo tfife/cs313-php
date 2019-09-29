@@ -11,8 +11,8 @@
     <style>
         .title span {
             font-family: "Segoe Script";
-            font-size: 40px;
-            line-height: 30px;
+            font-size: 60px;
+            line-height: 40px;
         }
     </style>
 </head>

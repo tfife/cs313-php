@@ -41,7 +41,7 @@
             <div class="medTextbox">Sometimes I try new things. When I was in the Young Women's organization, I tried my hand at painting. This January, I tried crocheting for the first time. Both of these were successes. Sometimes, the things I try don't turn out as well, but I usually don't save pictures of the flops ;)</div>
         </div>
         <div>
-            <img class="medPic" src="images/create_paint.jpg" alt="painting">
+            <img class="medPic" id="paint" src="images/create_paint.jpg" alt="painting">
         </div>
     </div>
     <div class="dioBox" style="background-color: gold"> 
@@ -69,7 +69,7 @@
     </div>
     <div class="dioBox" style="background-color: magenta">
         <div>
-            <img class="smallPic" src="images/create_tape.jpg" alt="Duct Tape Jack-o-lantern">
+            <img class="smallPic" id="tape" src="images/create_tape.jpg" alt="Duct Tape Jack-o-lantern">
         </div>
     </div>
 

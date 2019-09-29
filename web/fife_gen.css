@@ -116,6 +116,12 @@ footer {
       width: auto;
       padding: 5px;
   }
+
+  #tape, #paint {
+      width: 200px;
+      height: auto;
+  }
+
   .smallPic {
       background-color: white;
       height: 250px;
@@ -131,6 +137,16 @@ footer {
       font-size: 20px;
   }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
+    #tape, #paint {
+        width: 400px;
+        height: auto;
+    }
+}
 
+@media screen and (min-width: 800px) {
+    #tape, #paint {
+        height: 400px;
+        width: auto;
+    }
 }

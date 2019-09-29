@@ -69,7 +69,7 @@
     </div>
     <div class="dioBox" style="background-color: magenta">
         <div>
-            <img class="medPic" src="images/create_tape.jpg" alt="Duct Tape Jack-o-lantern">
+            <img class="smallPic" src="images/create_tape.jpg" alt="Duct Tape Jack-o-lantern">
         </div>
     </div>
 

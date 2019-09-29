@@ -112,6 +112,12 @@ footer {
       width: auto;
       padding: 5px;
   }
+  .smallPic {
+      background-color: white;
+      height: 250px;
+      width: auto;
+      padding: 5px;
+  }
   .medTextbox {
       height: 300px;
       width: 300px;

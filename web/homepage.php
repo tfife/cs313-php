@@ -44,7 +44,20 @@
             <img class="medPic" src="images/create_paint.jpg" alt="painting">
         </div>
     </div>
-    <div class="dioBox" style="background-color: gold">
+    <div class="dioBox" style="background-color: gold"> 
+        <div>
+            <div class="medTextbox">Something I've been doing for about eight years now is cake decorating. While I was <em>okay</em> at it from the beginning, it was amazing to look back to the beginning after a few years and to see how far I'd come. I still like to learn new techniques and even make up some of my own, like the ducks I piped onto this cake.</div>
+        </div>
+        <div>
+            <img class="medPic" src="images/create_ducks.jpg" alt="duck cake">
+        </div>
+        <div>
+            <div class="medTextbox">One <em>new</em> thing I started about three years ago is computer programming. After a single one-credit Python class for non-majors, I changed my major from English to Software Engineering. It was a totally new world, and I've never stopped feeling overwhelmed, but I know that with practice, I'll be able to look back and see how far I've come. Programming is just another way to express my creativity, while at the same time thinking analytically and (hopefully) making some money. :)</div>
+        </div>
+
+    </div>
+
+    <div class="dioBox" style="background-color: indigo">
         <div>
             <img class="medPic" src="images/create_crochet.jpg" alt="crochet dragon">
         </div>

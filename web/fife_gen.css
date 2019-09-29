@@ -107,10 +107,10 @@ footer {
   }
 
   .medPic {
-      color: white;
+      background-color: white;
       height: 400px;
       width: auto;
-      padding: 10px;
+      padding: 5px;
   }
   .medTextbox {
       height: 300px;

@@ -99,7 +99,8 @@ footer {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-evenly
+      justify-content: space-evenly;
+      align-items: center;
   }
 
   .medPic {
@@ -110,7 +111,7 @@ footer {
   .medTextbox {
       height: 300px;
       width: 300px;
-      background-color: rgba(255, 255, 255, 0.295);
+      background-color: rgba(255, 255, 255, 0.788);
       margin: 5px;
   }
 

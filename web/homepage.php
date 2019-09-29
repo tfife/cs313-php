@@ -30,7 +30,7 @@
 
           </div>
           <div>
-              <img src="images/create_clay.jpg" alt="clay gnome">
+              <img class="smallPic" src="images/create_clay.jpg" alt="clay gnome">
           </div>
     </div>
     </div>

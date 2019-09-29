@@ -44,6 +44,7 @@ header {
 }
 
 .bodyBox {
+    color: rgba(255, 255, 255, 0.9);
     margin: auto;
     padding: 20px 5%;
     width: 70%;

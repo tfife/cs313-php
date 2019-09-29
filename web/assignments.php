@@ -9,7 +9,7 @@
     <meta name="description" content="Index of Assignments">
 </head>
 
-<body>
+<body background="images/triangles.jpg">
     <header>
         <?php include ("navbar_gen.php"); ?>
     </header>

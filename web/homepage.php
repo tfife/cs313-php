@@ -11,7 +11,7 @@
     <style>
         .title span {
             font-family: "Segoe Script";
-            text-shadow: 0 0 5px darkturquoise;
+            font-size: 40px;
         }
     </style>
 </head>

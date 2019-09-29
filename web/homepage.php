@@ -10,7 +10,6 @@
 
     <style>
         .title span {
-            font-size: 50px;
             font-family: "Segoe Script";
             text-shadow: 0 0 5px darkturquoise;
         }
@@ -22,7 +21,7 @@
         <?php include ("navbar_gen.php"); ?>
     </header>
   
-    <div class="title">Every Day <span>CREATE!</span></div>
+    <div class="title">Every Day <span>Create!</span></div>
 
     <div class="bodyBox">
       <h2>About Me:</h2>

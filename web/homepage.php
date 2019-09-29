@@ -7,6 +7,12 @@
     <title>02Teach</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Homepage">
+
+    <style>
+        .title span {
+            font-style: "Yellowtail";
+        }
+    </style>
 </head>
 
 <body>
@@ -14,11 +20,10 @@
         <?php include ("navbar_gen.php"); ?>
     </header>
   
-    <div class="title">FIF-101 Intro to Tori</div>
+    <div class="title">Every Day <span>CREATE!</span></div>
 
     <div class="bodyBox">
       <h2>About Me:</h2>
-      <p>Hi, I'm Tori! I love my family, learning, and being creative. I grew up in a smallish town in Idaho, and now I'm attending a university in another smallish town in Idaho.</p>
     </div>
 
     <footer>

@@ -39,6 +39,7 @@ header {
     margin: 0 0 10px 0;
     width: 90%;
     font-size: 30px;
+    font-family: sans-serif;
 }
 
 .bodyBox {
@@ -88,7 +89,7 @@ footer {
     height: 204px;
     width: 204px;
     margin: 0;
-    background-color: indigo;
+    background-color: darkturquoise;
   }
   .linkBox a span {
     font-size: 24px;

@@ -27,11 +27,12 @@
     <div class="bodyBox">
       <div class="dioBox">
           <div>
-
+              <img class="smallPic" src="images/create_cupcakes.jpg" alt="clay gnome">
           </div>
           <div>
               <img class="smallPic" src="images/create_clay.jpg" alt="clay gnome">
           </div>
+          <div>One of my favorite things about myself is my propensity for creativity. Ever since I was a little kid, I loved writing and wanted to be an author. I liked drawing and painting and wanted to be an artist. As I got older, I thought I might want to be an architect or an interior designer.</div>
     </div>
     </div>
 

@@ -95,9 +95,16 @@ footer {
     font-size: 24px;
   }
 
+  .dioBox {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
   .smallPic {
-      height: 300px;
+      height: 400px;
       width: auto;
+      background-color: darkturquoise;
+      padding: 5px;
   }
 
 @media screen and (min-width: 800px) {

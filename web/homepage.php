@@ -10,7 +10,7 @@
 
     <style>
         .title span {
-            font-style: "Yellowtail";
+            font-family: "Yellowtail";
         }
     </style>
 </head>

@@ -101,6 +101,10 @@ footer {
       flex-wrap: wrap;
       justify-content: space-evenly;
       align-items: center;
+      padding: 5%;
+      border-radius: 15%;
+      width: 70%;
+      margin: auto;
   }
 
   .medPic {

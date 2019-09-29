@@ -17,7 +17,7 @@
     </style>
 </head>
 
-<body>
+<body background="images/triangles.jpg">
     <header>
         <?php include ("navbar_gen.php"); ?>
     </header>

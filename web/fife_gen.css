@@ -16,9 +16,10 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-right: 1px solid thistle;
   }
 #navbar li a:hover {
-    background-color: thistle;
+    background-color: purple;
     color: white;
     text-shadow: 0 0 3px black;
 }
@@ -57,7 +58,44 @@ footer {
     font-size: small;
 }
 
+.flexgroup {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.linkBox {
+    display: table;
+    margin: 10px;
+}
+.linkBox a {
+    display: table-cell;
+    height: 200px;
+    width: 200px;
+    font-size: 30px;
+    font-family: Sans-Serif;
+    color: white;
+    background-color: darkmagenta;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    text-shadow: 0 0 5px indigo;
+  }
+  .linkBox:hover {
+    margin: 8px;
+  }
+  .linkBox a:hover {
+    height: 204px;
+    width: 204px;
+    margin: 0;
+    background-color: indigo;
+  }
+  .linkBox a span {
+    font-size: 24px;
+  }
+
 @media screen and (min-width: 800px) {
-    .bodyBox {
+    .flexgroup {
+        flex-direction: row;
     }
 }

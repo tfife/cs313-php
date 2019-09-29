@@ -100,11 +100,15 @@ footer {
       flex-wrap: wrap;
   }
 
-  .smallPic {
+  .medPic {
       height: 400px;
       width: auto;
-      background-color: darkturquoise;
       padding: 5px;
+  }
+  .medTextbox {
+      height: 400px;
+      width: auto;
+      background-color: white;
   }
 
 @media screen and (min-width: 800px) {

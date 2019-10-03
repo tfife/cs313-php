@@ -13,8 +13,9 @@
     <header>
         <?php include ("navbar_gen.php"); ?>
     </header>
-  
+
     <div class="title">Spooky Store</div>
+    <div>This is where content will appear to buy stuff</div>
 
 
     <footer>

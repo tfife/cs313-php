@@ -15,8 +15,7 @@
     </header>
   
     <div class="title">Order Confirmed</div>
-
-
+    <div class="bodyBox">Content</div>
     <footer>
         Website created by Tori Fife. 10/2019.
     </footer>

@@ -15,7 +15,7 @@
     </header>
   
     <div class="title">Checkout</div>
-
+    <div>Content</div>
 
     <footer>
         Website created by Tori Fife. 10/2019.

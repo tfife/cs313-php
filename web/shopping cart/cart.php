@@ -15,6 +15,7 @@
     </header>
   
     <div class="title">Cart</div>
+    
     <div>This is where content will appear for the Cart</div>
 
 

@@ -18,7 +18,7 @@
 
 
     <footer>
-        Website created by Tori Fife. 9/2019.
+        Website created by Tori Fife. 10/2019.
     </footer>
 </body>
 

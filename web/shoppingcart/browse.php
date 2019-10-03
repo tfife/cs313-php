@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="fife_gen.css">
     <meta charset="UTF-8">
-    <title>Order Confirmation</title>
+    <title>Browse Items</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
 </head>
@@ -14,11 +14,11 @@
         <?php include ("navbar_gen.php"); ?>
     </header>
   
-    <div class="title">Order Confirmed</div>
+    <div class="title">Spooky Store</div>
 
 
     <footer>
-        Website created by Tori Fife. 9/2019.
+        Website created by Tori Fife. 10/2019.
     </footer>
 </body>
 

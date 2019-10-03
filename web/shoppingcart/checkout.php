@@ -2,7 +2,7 @@
 <html lang="en-us">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="fife_gen.css">
+    <link rel="stylesheet" type="text/css" href="fife_store.css">
     <meta charset="UTF-8">
     <title>Checkout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
     </header>
   
     <div class="title">Checkout</div>
-
+    <div>Content</div>
 
     <footer>
         Website created by Tori Fife. 10/2019.

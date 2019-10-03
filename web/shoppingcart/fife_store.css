@@ -136,6 +136,12 @@ footer {
       font-size: 20px;
   }
 
+  .product {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
 @media screen and (min-width: 600px) {
     #tape, #paint {
         width: 400px;

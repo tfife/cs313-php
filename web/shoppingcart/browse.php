@@ -20,7 +20,7 @@
         $products = array("Soap"=>5.60, "Pet Lemur"=>76.99, "Piano"=>499.04, "Bottled Water"=>0.89);
 
         foreach($products as $p => $p_val) {
-            echo("<div class='bodyBox' style='display: inline'><div class='product'><div>" . $p . "</div><div>" . $p_val . "</div><button>Add to cart</button></div></div>");
+            echo("<div class='bodyBox'><div class='product'><div>" . $p . "</div><div>" . $p_val . "</div><button>Add to cart</button></div></div>");
         }
     ?>
 

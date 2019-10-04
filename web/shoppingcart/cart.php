@@ -13,18 +13,34 @@
     <meta name="description" content="">
 </head>
 
-<body background="images/triangles.jpg">
+<body>
+    <?php
+        if ($_SESSION[items]) {
+            $items = $_SESSION[items];
+            $prices = $_SESSION[prices];
+            $quantities = $_SESSION[quantities];
+        }
+        else {
+            $items = [];
+            $prices = []];
+            $quantities = [];
+        }
+        echo "</script>";
+    ?>
     <header>        
         <div class="title">
             View Cart
-            <img onclick="viewCart()" src="cart_icon.png" style="height: 40px; width: auto; float: right" alt="cart">
+            <a href="browse.php" style="float: right">Click Here to return to Browse"</a>
         </div>
     </header>
-  
-    <div class="title">Cart</div>
     
     <div>This is where content will appear for the Cart</div>
+    <?php
 
+        foreach($i = 0; $i < sizeof($items); i++) {
+            echo("<div class='bodyBox'><div class='product'><div> " . $items[$i] . " </div><div>Quantity: " . $quantities[$i] . $prices[i] . " </div></div></div>");
+        }
+    ?>
 
     <footer>
         Website created by Tori Fife. 10/2019.

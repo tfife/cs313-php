@@ -74,10 +74,7 @@
         $.ajax({
             url: "add_item.php",
             data: cart,
-            type: 'post',
-            success: function(data) {
-                alert(data);
-            }
+            type: 'post'
         });
         document.getElementById("stuff").innerHTML = JSON.stringify(cart);
     }

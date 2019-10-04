@@ -29,7 +29,7 @@
     ?>
     <header>
         STuff to bUy
-        <div style= "color: white; font-size: 20px; padding: 5px; height: 40px; width: auto; float: right">
+        <div style= "display: inline; color: white; font-size: 20px; padding: 5px; height: 40px; width: auto; float: right">
             <a href="cart.php"><img onclick="viewCart()" src="cart_icon.png" alt="cart"></a>
             (<span id="cartCount"></span>)
             <script>document.getElementById("cartCount") = items.length;</script>

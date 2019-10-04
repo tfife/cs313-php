@@ -14,6 +14,7 @@
 <body>
     <?php
         $_SESSION[cart] = $_POST["cart"];
+        print_r($_SESSION);
     ?>
 </body>
 

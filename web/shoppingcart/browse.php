@@ -39,9 +39,8 @@
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">Item</th>
-                    <th scope="col">Quantity</th>
                     <th scope="col">Price</th>
-                    <th scope="col">Remove</th>
+                    <th scope="col">Add to Cart</th>
                 </tr>
             </thead>
             <tbody>

@@ -33,43 +33,23 @@
             <a href="browse.php" style="font-size: 12px; color: white; float: right">Click Here to return to Browse</a>
         </div>
     </header>
+    <table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Item</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Total Price</th>
+        </tr>
+    </thead>
+    <tbody>
     <?php
-        echo ("<div class='cart_item'><div>Item</div><div>Quantity</div><div>Individual Price</div><div>Combined Price</div></div>");
         for($i = 0; $i < sizeof($items); $i++) {
             $totalPrice = ($prices[i] * $quantities[i]);
-            echo("<div class='cart_item'><div>" . $items[$i] . "</div><div>" . $quantities[$i] . "</div><div>$" . $prices[$i] . "</div><div>" . $totalPrice . "</div></div>");
+            echo("<tr><th scope='row'>" . $items[$i] . "</th><td>" . $prices[$i] . "</td><td>" . $quantities[$i] . "</td><td>" . $totalPrice . "</td></tr>");
         }
     ?>
-
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">Item</th>
-      <th scope="col">Price</th>
-      <th scope="col">Quantity</th>
-      <th scope="col">Total Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Lemur</th>
-      <td>$30</td>
-      <td>2</td>
-      <td>$100</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
+    </tbody>
 </table>
 
     <footer>

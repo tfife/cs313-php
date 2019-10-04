@@ -33,24 +33,26 @@
             <a href="browse.php" style="font-size: 12px; color: white; float: right">Click Here to return to Browse</a>
         </div>
     </header>
-    <table class="table table-hover" style="border-radius: 50%; width: 70%">
-    <thead class="thead-dark">
-        <tr>
-            <th scope="col">Item</th>
-            <th scope="col">Price</th>
-            <th scope="col">Quantity</th>
-            <th scope="col">Total Price</th>
-        </tr>
-    </thead>
-    <tbody>
-    <?php
-        for($i = 0; $i < sizeof($items); $i++) {
-            $totalPrice = ($prices[i] * $quantities[i]);
-            echo("<tr><th scope='row'>" . $items[$i] . "</th><td>" . $prices[$i] . "</td><td>" . $quantities[$i] . "</td><td>" . $totalPrice . "</td></tr>");
-        }
-    ?>
-    </tbody>
-</table>
+    <div class="bodyBox">
+        <table class="table table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total Price</th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php
+            for($i = 0; $i < sizeof($items); $i++) {
+                $totalPrice = ($prices[i] * $quantities[i]);
+                echo("<tr><th scope='row'>" . $items[$i] . "</th><td>" . $prices[$i] . "</td><td>" . $quantities[$i] . "</td><td>" . $totalPrice . "</td></tr>");
+            }
+        ?>
+        </tbody>
+        </table>
+    </div>
 
     <footer>
         Website created by Tori Fife. 10/2019.

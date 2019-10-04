@@ -34,6 +34,7 @@
         </div>
     </header>
 
+    <div class="bodyBox">
     <?php
         $products = array("Soap"=>5.60, "Pet Lemur"=>76.99, "Piano"=>499.04, "Bottled Water"=>0.89);
 
@@ -42,9 +43,7 @@
               . " </div><button onclick='addCart(\"$p\", $p_val)'> Add to cart</button></div></div>");
         }
     ?>
-
-    <div id="stuff"></div>
-
+    </div>
 
 
     <footer>
@@ -78,8 +77,6 @@
             data: cart,
             type: 'post'
         });
-
-        document.getElementById("stuff").innerHTML = JSON.stringify(cart);
     }
 </script>
 

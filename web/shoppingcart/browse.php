@@ -16,7 +16,14 @@
 
 <body>
     <?php
-        echo("<script> cart = " . $_SESSION[cart] . ";</script>");
+        echo "<script>";
+        if ($_SESSION[cart]) {
+            echo("var cart = " . $_SESSION[cart] . ";");
+        }
+        else {
+            echo("var cart = [];");
+        }
+        echo "</script>";
     ?>
     <header>
         <div class="title">
@@ -43,7 +50,6 @@
 </body>
 
 <script>
-    var cart = [];
 
     function addCart(item, price) {
         var isdone = false;

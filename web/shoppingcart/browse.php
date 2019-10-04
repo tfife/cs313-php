@@ -55,8 +55,15 @@
         }
     }
 
-    function viewCart(item, price) {
-        $.post("cart.php");
+    function viewCart() {
+        $.ajax({
+            url: "cart.php",
+            data: cart,
+            type: 'post',
+            success: function(data) {
+                alert(data);
+            }
+        });
         //document.getElementById("stuff").innerHTML = cart;
     }
 </script>

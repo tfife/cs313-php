@@ -32,12 +32,11 @@
             <a href="browse.php" style="font-size: 12px; color: white; float: right">Click Here to return to Browse</a>
         </div>
     </header>
-    
-    <div>This is where content will appear for the Cart</div>
     <?php
         echo ("<div class='cart_item'><div>Item</div><div>Quantity</div><div>Individual Price</div><div>Combined Price</div></div>")
         for($i = 0; $i < sizeof($items); $i++) {
-            echo("<div class='cart_item'><div>" . $items[$i] . "</div><div>" . $quantities[$i] . "</div><div>" . $prices[$i] . "</div><div>" . ($prices[i] * $quantities[i]) . "</div></div>");
+            $totalPrice = ($prices[i] * $quantities[i]);
+            echo("<div class='cart_item'><div>" . $items[$i] . "</div><div>" . $quantities[$i] . "</div><div>" . $prices[$i] . "</div><div>" . $totalPrice . "</div></div>");
         }
     ?>
 

@@ -90,6 +90,7 @@
             data: cart,
             type: 'post'
         });
+        document.getElementById("cartCount").innerHTML = items.length;
     }
 </script>
 

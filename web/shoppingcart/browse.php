@@ -32,7 +32,13 @@
         <div style= "color: white; font-size: 20px; padding: 5px; float: right">
             <a href="cart.php"><img onclick="viewCart()" src="cart_icon.png" alt="cart" style="height: 40px; width: auto"></a>
             (<span id="cartCount"></span>)
-            <script>document.getElementById("cartCount").innerHTML = items.length;</script>
+            <script>
+                var numItems = 0;
+                for (x in quantities) {
+                    numItems += x;
+                }
+                document.getElementById("cartCount").innerHTML = numItems;
+            </script>
         </div>
     </header>
 
@@ -90,7 +96,11 @@
             data: cart,
             type: 'post'
         });
-        document.getElementById("cartCount").innerHTML = items.length;
+        numItems = 0;
+        for (x in quantities) {
+            numItems += x;
+        }
+        document.getElementById("cartCount").innerHTML = numItems;
     }
 </script>
 

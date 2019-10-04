@@ -14,6 +14,9 @@
 </head>
 
 <body background="images/triangles.jpg">
+    <?php
+        $_SESSION[cart] = $_POST["cart"];
+    ?>
     <header>        
         <div class="title">
             View Cart

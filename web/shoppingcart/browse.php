@@ -14,7 +14,10 @@
     <meta name="description" content="">
 </head>
 
-<body background="images/triangles.jpg">
+<body>
+    <?php
+        echo("<script> cart = " . $_SESSION[cart] . "</script>");
+    ?>
     <header>
         <div class="title">
             STuff to bUy
@@ -56,7 +59,16 @@
     }
 
     function viewCart() {
-        $.post("cart.php");
+        var a = {};
+        a.cart = cart;
+        $.ajax({
+            url: "add_item.php",
+            data: a,
+            type: 'post',
+            success: function(data) {
+                alert(data);
+            }
+        });
         //document.getElementById("stuff").innerHTML = cart;
     }
 </script>

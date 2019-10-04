@@ -15,11 +15,10 @@
 
 <body background="images/triangles.jpg">
     <header>
-        <?php include ("navbar_gen.php"); ?>
+        <div class="title">STuff to bUy<img src="cart_icon" style="float: right"></div>
+
     </header>
 
-
-    <div class="title">STuff to bUy</div>
     <?php
         $products = array("Soap"=>5.60, "Pet Lemur"=>76.99, "Piano"=>499.04, "Bottled Water"=>0.89);
 
@@ -49,7 +48,7 @@
             }
         }
         if (isdone == false) {
-            cart.push([item, price, 2]);
+            cart.push([item, price, 1]);
         }
         document.getElementById("stuff").innerHTML = cart;
     }

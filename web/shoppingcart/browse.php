@@ -15,7 +15,7 @@
 
 <body background="images/triangles.jpg">
     <header>
-        <div class="title">STuff to bUy<img src="cart_icon.png" style="height: 30px; width: auto; float: right" alt="cart" href="cart.php"></div>
+        <div class="title">STuff to bUy<img onclick="viewCart()" src="cart_icon.png" style="height: 60px; width: auto; float: right" alt="cart"></div>
 
     </header>
 
@@ -50,6 +50,9 @@
         if (isdone == false) {
             cart.push([item, price, 1]);
         }
+    }
+
+    function viewCart(item, price) {
         document.getElementById("stuff").innerHTML = cart;
     }
 </script>

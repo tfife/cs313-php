@@ -29,7 +29,7 @@
     <header>        
         <div class="title">
             View Cart
-            <a href="browse.php" style="float: right">Click Here to return to Browse"</a>
+            <a href="browse.php" style="float: right">Click Here to return to Browse</a>
         </div>
     </header>
     

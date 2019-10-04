@@ -73,6 +73,7 @@
         cart.items = items;
         cart.prices = prices;
         cart.quantities = quantities;
+
         $.ajax({
             url: "add_item.php",
             data: cart,
@@ -81,7 +82,7 @@
                 alert(data);
             }
         });
-        //document.getElementById("stuff").innerHTML = cart;
+        document.getElementById("stuff").innerHTML = cart;
     }
 </script>
 

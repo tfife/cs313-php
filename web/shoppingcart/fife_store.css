@@ -2,7 +2,7 @@
     margin: 0;
 }
 
-html {
+body {
     font-family: sans-serif;
     background-color: skyblue;
     background-image: linear-gradient(to right, darkcyan , skyblue);

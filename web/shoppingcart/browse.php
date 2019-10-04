@@ -35,14 +35,26 @@
     </header>
 
     <div class="bodyBox">
-    <?php
-        $products = array("Soap"=>5.60, "Pet Lemur"=>76.99, "Piano"=>499.04, "Bottled Water"=>0.89);
+        <table class="table table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+        <?php
+            $products = array("Soap"=>5.60, "Pet Lemur"=>76.99, "Piano"=>499.04, "Bottled Water"=>0.89);
 
-        foreach($products as $p => $p_val) {
-            echo("<div class='bodyBox'><div class='product'><div> " . $p . " </div><div>$" . $p_val 
-              . " </div><button onclick='addCart(\"$p\", $p_val)'> Add to cart</button></div></div>");
-        }
-    ?>
+            foreach($products as $p => $p_val) {
+                echo("<tr><th scope='row'>" . $p . " </th><td>$" . $p_val 
+                . " </td><td><button onclick='addCart(\"$p\", $p_val)'> Add to cart</button></td></tr>");
+            }
+        ?>
+        </tbody>
+        </table>
     </div>
 
 

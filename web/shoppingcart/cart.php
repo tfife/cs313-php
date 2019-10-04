@@ -38,16 +38,16 @@
         <thead class="thead-dark">
             <tr>
                 <th scope="col">Item</th>
-                <th scope="col">Price</th>
                 <th scope="col">Quantity</th>
-                <th scope="col">Total Price</th>
+                <th scope="col">Price</th>
+                <th scope="col">Remove</th>
             </tr>
         </thead>
         <tbody>
         <?php
             for($i = 0; $i < sizeof($items); $i++) {
-                $totalPrice = ($prices[i] * $quantities[i]);
-                echo("<tr><th scope='row'>" . $items[$i] . "</th><td>" . $prices[$i] . "</td><td>" . $quantities[$i] . "</td><td>" . $totalPrice . "</td></tr>");
+                echo("<tr><th scope='row'>" . $items[$i] . "</th><td>$" . $prices[$i] . "</td><td>" . $quantities[$i]
+                 . "</td>\_/<td>" . "</td></tr>");
             }
         ?>
         </tbody>

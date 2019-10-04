@@ -44,7 +44,7 @@
         var isdone = false;
         for (i = 0; i < cart.length; i++) {
             if (item == cart[i][0]) {
-                a2[i][2] += 1;
+                cart[i][2] += 1;
                 isdone = true;
             }
         }

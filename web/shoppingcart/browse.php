@@ -15,7 +15,7 @@
 
 <body background="images/triangles.jpg">
     <header>
-        <div class="title">STuff to bUy<img src="cart_icon.jpg" style="float: right" alt="cart" href="cart.php"></div>
+        <div class="title">STuff to bUy<img src="cart_icon.png" style="height: 30px; width: auto; float: right" alt="cart" href="cart.php"></div>
 
     </header>
 

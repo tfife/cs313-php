@@ -16,8 +16,10 @@
 
 <body background="images/triangles.jpg">
     <header>
-        <div class="title">STuff to bUy<img onclick="viewCart()" src="cart_icon.png" style="height: 40px; width: auto; float: right" alt="cart"></div>
-
+        <div class="title">
+            STuff to bUy
+            <img onclick="viewCart()" src="cart_icon.png" style="height: 40px; width: auto; float: right" alt="cart">
+        </div>
     </header>
 
     <?php
@@ -54,7 +56,7 @@
     }
 
     function viewCart(item, price) {
-        $.post("cart.php")
+        $.post("cart.php");
         //document.getElementById("stuff").innerHTML = cart;
     }
 </script>

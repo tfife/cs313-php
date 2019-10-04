@@ -14,8 +14,11 @@
 </head>
 
 <body background="images/triangles.jpg">
-    <header>
-        <?php include ("navbar_gen.php"); ?>
+    <header>        
+        <div class="title">
+            View Cart
+            <img onclick="viewCart()" src="cart_icon.png" style="height: 40px; width: auto; float: right" alt="cart">
+        </div>
     </header>
   
     <div class="title">Cart</div>

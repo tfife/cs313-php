@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en-us">
 
@@ -20,9 +24,11 @@
         $products = array("Soap"=>5.60, "Pet Lemur"=>76.99, "Piano"=>499.04, "Bottled Water"=>0.89);
 
         foreach($products as $p => $p_val) {
-            echo("<div class='bodyBox'><div class='product'><div>" . $p . "</div><div>" . $p_val . "</div><button>Add to cart</button></div></div>");
+            echo("<div class='bodyBox'><div class='product'><div> " . $p . " </div><div> " . $p_val . " </div><button onclick='addCart(\"$p\", $p_val)'> Add to cart</button></div></div>");
         }
     ?>
+
+    <div id="stuff"></div>
 
 
 
@@ -30,5 +36,23 @@
         Website created by Tori Fife. 10/2019.
     </footer>
 </body>
+
+<script>
+    var cart = [];
+
+    function addCart(item, price) {
+        var isdone = false;
+        for (i = 0; i < cart.length; i++) {
+            if (item == cart[i][0]) {
+                a2[i][2] += 1;
+                isdone = true;
+            }
+        }
+        if (isdone == false) {
+            cart.push([item, price, 2]);
+        }
+        document.getElementById("stuff").innerHTML = a2;
+    }
+</script>
 
 </html>

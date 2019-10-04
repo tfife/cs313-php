@@ -33,7 +33,7 @@
             <a href="browse.php" style="font-size: 12px; color: white; float: right">Click Here to return to Browse</a>
         </div>
     </header>
-    <table class="table table-striped">
+    <table class="table table-hover">
     <thead>
         <tr>
             <th scope="col">Item</th>
@@ -46,7 +46,7 @@
     <?php
         for($i = 0; $i < sizeof($items); $i++) {
             $totalPrice = ($prices[i] * $quantities[i]);
-            echo("<tr><th scope='row'>" . $items[$i] . "</th><td>" . $prices[$i] . "</td><td>" . $quantities[$i] . "</td><td>" . $totalPrice . "</td></tr>");
+            echo("<tr class='text-right'><th scope='row'>" . $items[$i] . "</th><td>" . $prices[$i] . "</td><td>" . $quantities[$i] . "</td><td>" . $totalPrice . "</td></tr>");
         }
     ?>
     </tbody>

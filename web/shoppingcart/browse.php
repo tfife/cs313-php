@@ -16,7 +16,7 @@
 
 <body>
     <?php
-        echo("<script> cart = " . $_SESSION[cart] . "</script>");
+        echo("<script> cart = " . $_SESSION[cart] . ";</script>");
     ?>
     <header>
         <div class="title">

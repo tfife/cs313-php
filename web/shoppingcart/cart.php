@@ -33,7 +33,7 @@
         </div>
     </header>
     <?php
-        echo ("<div class='cart_item'><div>Item</div><div>Quantity</div><div>Individual Price</div><div>Combined Price</div></div>")
+        echo ("<div class='cart_item'><div>Item</div><div>Quantity</div><div>Individual Price</div><div>Combined Price</div></div>");
         for($i = 0; $i < sizeof($items); $i++) {
             $totalPrice = ($prices[i] * $quantities[i]);
             echo("<div class='cart_item'><div>" . $items[$i] . "</div><div>" . $quantities[$i] . "</div><div>" . $prices[$i] . "</div><div>" . $totalPrice . "</div></div>");

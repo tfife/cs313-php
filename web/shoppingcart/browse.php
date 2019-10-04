@@ -18,7 +18,7 @@
     <?php
         echo "<script>var cart = ";
         if ($_SESSION[cart]) {
-            echo("[[" . cart[0][0] . ", " . cart[0][1] . ", " . cart[0][2] . "]]");
+            echo("[[" . $_SESSION[cart][0][0] . ", " . $_SESSION[cart][0][1] . ", " . $_SESSION[cart][0][2] . "]]");
         }
         else {
             echo("[]");

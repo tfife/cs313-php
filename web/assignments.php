@@ -18,6 +18,7 @@
     <div class="bodyBox">
         <h2>Note: links will appear in order from newest to oldest.</h2>
         <div class="flexgroup">
+            <div class="linkBox"><a href="shoppingcart/browse.php">Shopping Cart<span class="small"><br>10/04/19</span></a></div>
             <div class="linkBox"><a href="homepage.php">Homepage<span class="small"><br>9/28/19</span></a></div>
             <div class="linkBox"><a href="hello.php">Hello World!<span class="small"><br>9/21/19</span></a></div>
         </div>

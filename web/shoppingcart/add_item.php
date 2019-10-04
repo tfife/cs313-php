@@ -13,8 +13,10 @@
 
 <body>
     <?php
-        $_SESSION[cart] = $_POST["cart"];
-        echo $_SESSION[cart][0][0];
+        $_SESSION[items] = $_POST["items"];
+        $_SESSION[prices] = $_POST["prices"];
+        $_SESSION[quantities] = $_POST["quantities"];
+        echo implode(" ", $_SESSION[items]);
     ?>
 </body>
 

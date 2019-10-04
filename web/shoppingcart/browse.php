@@ -16,12 +16,12 @@
 
 <body>
     <?php
-        echo "<script>var cart = ";
-        if ($_SESSION[cart]) {
-            echo("[[" . $_SESSION[cart][0][0] . ", " . $_SESSION[cart][0][1] . ", " . $_SESSION[cart][0][2] . "]]");
+        echo "<script>";
+        if ($_SESSION[items]) {
+            echo("var items = [" . implode("], [",$_SESSION[items]) . "]; var prices = [" . implode("], [",$_SESSION[prices]) . "]; var quantities = [" . implode("], [",$_SESSION[quantities]) . "];");
         }
         else {
-            echo("[]");
+            echo("var items = []; var prices = [], var quantities = [];");
         }
         echo ";</script>";
     ?>
@@ -53,23 +53,29 @@
 
     function addCart(item, price) {
         var isdone = false;
-        for (i = 0; i < cart.length; i++) {
-            if (item == cart[i][0]) {
-                cart[i][2] += 1;
+        for (i = 0; i < items.length; i++) {
+            if (item == items[i]) {
+                quantities[i] += 1;
                 isdone = true;
             }
         }
         if (isdone == false) {
-            cart.push([item, price, 1]);
+            items.push(item);
+            prices.push(price);
+            quantities.push(1);
         }
+
+
     }
 
     function viewCart() {
-        var a = {};
-        a.cart = cart;
+        var cart = {};
+        cart.items = items;
+        cart.prices = prices;
+        cart.quantities = quantities;
         $.ajax({
             url: "add_item.php",
-            data: a,
+            data: cart,
             type: 'post',
             success: function(data) {
                 alert(data);

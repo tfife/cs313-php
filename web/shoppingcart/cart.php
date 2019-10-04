@@ -29,15 +29,15 @@
     <header>        
         <div class="title">
             View Cart
-            <a href="browse.php" style="float: right">Click Here to return to Browse</a>
+            <a href="browse.php" style="font-size: 12px; color: white; float: right">Click Here to return to Browse</a>
         </div>
     </header>
     
     <div>This is where content will appear for the Cart</div>
     <?php
-
+        echo ("<div class='cart_item'><div>Item</div><div>Quantity</div><div>Individual Price</div><div>Combined Price</div></div>")
         for($i = 0; $i < sizeof($items); $i++) {
-            echo($items[$i] . $quantities[$i] . $prices[$i]);
+            echo("<div class='cart_item'><div>" . $items[$i] . "</div><div>" . $quantities[$i] . "</div><div>" . $prices[$i] . "</div><div>" . ($prices[i] * $quantities[i]) . "</div></div>");
         }
     ?>
 

@@ -137,9 +137,26 @@ footer {
   }
 
   .product {
+      font-size: 20px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+
+  .product button {
+      background-color: darkcyan;
+      border-radius: 15%;
+      color: white;
+      text-shadow: 0 0 5px black;
+  }
+
+  .cart_item {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
 @media screen and (min-width: 600px) {

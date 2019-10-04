@@ -18,7 +18,7 @@
     <?php
         echo "<script>";
         if ($_SESSION[items]) {
-            echo("var items = [" . implode(", ",$_SESSION[items]) . "]; var prices = ["
+            echo("var items = ['" . implode("', '",$_SESSION[items]) . "']; var prices = ["
              . implode(", ",$_SESSION[prices]) . "]; var quantities = [" . implode(", ",$_SESSION[quantities]) . "];");
         }
         else {
@@ -76,6 +76,7 @@
             data: cart,
             type: 'post'
         });
+
         document.getElementById("stuff").innerHTML = JSON.stringify(cart);
     }
 </script>

@@ -82,7 +82,7 @@
                 alert(data);
             }
         });
-        document.getElementById("stuff").innerHTML = cart;
+        document.getElementById("stuff").innerHTML = JSON.stringify(cart);
     }
 </script>
 

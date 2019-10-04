@@ -18,11 +18,7 @@
     <?php
         echo "<script>var cart = ";
         if ($_SESSION[cart]) {
-            echo("[");
-            foreach(cart as c) {
-                echo(c[0]);
-            }
-            echo("]");
+            echo("[]");
         }
         else {
             echo("[]");

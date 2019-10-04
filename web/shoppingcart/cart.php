@@ -44,18 +44,18 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Item</th>
+      <th scope="col">Price</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Total Price</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <th scope="row">Lemur</th>
+      <td>$30</td>
+      <td>2</td>
+      <td>$100</td>
     </tr>
     <tr>
       <th scope="row">2</th>

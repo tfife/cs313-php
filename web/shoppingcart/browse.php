@@ -20,7 +20,7 @@
         if ($_SESSION[cart]) {
             echo("[");
             foreach(cart as c) {
-                echo(c);
+                echo(c[0]);
             }
             echo("]");
         }

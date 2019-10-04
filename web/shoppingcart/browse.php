@@ -34,8 +34,8 @@
             (<span id="cartCount"></span>)
             <script>
                 var numItems = 0;
-                for (x in quantities) {
-                    numItems += x;
+                for (i = 0; i < quantities.length; i++) {
+                    numItems += quantities[i];
                 }
                 document.getElementById("cartCount").innerHTML = numItems;
             </script>
@@ -97,8 +97,8 @@
             type: 'post'
         });
         numItems = 0;
-        for (x in quantities) {
-            numItems += x;
+        for (i = 0; i < quantities.length; i++) {
+            numItems += quantities[i];
         }
         document.getElementById("cartCount").innerHTML = numItems;
     }

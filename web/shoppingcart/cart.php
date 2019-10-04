@@ -46,7 +46,7 @@
         <tbody>
         <?php
             for($i = 0; $i < sizeof($items); $i++) {
-                echo("<tr><th scope='row'>" . $items[$i] . "</th><td>$" . $quantities[$i] . "</td><td>" . $prices[$i]
+                echo("<tr><th scope='row'>" . $items[$i] . "</th><td>" . $quantities[$i] . "</td><td>$" . $prices[$i]
                  . "</td><td>\_/</td></tr>");
             }
         ?>

@@ -25,7 +25,6 @@
             $prices = []];
             $quantities = [];
         }
-        echo "</script>";
     ?>
     <header>        
         <div class="title">

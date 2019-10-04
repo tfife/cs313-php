@@ -37,7 +37,7 @@
     <?php
 
         for($i = 0; $i < sizeof($items); i++) {
-            echo("<div class='bodyBox'><div class='product'><div> " . $items[$i] . " </div><div>Quantity: " . $quantities[$i] . $prices[i] . " </div></div></div>");
+            echo($items[$i] . $quantities[$i] . $prices[$i]);
         }
     ?>
 

@@ -53,6 +53,7 @@
         </tbody>
         </table>
     </div>
+    <a href="checkout.php"><button>Checkout</button></a>
 
     <footer>
         Website created by Tori Fife. 10/2019.

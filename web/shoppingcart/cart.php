@@ -29,7 +29,7 @@
     ?>
     <header>
         View Cart
-        <div style="font-size: 12px; color: white; float: right">
+        <div style="font-size: 12px; color: white; float: right; text-decoration: none;">
             <a href="browse.php">Click Here to return to Browse</a>
         </div>
     </header>

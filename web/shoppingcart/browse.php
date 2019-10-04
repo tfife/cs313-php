@@ -18,12 +18,12 @@
     <?php
         echo "<script>";
         if ($_SESSION[items]) {
-            echo("var items = [" . implode("], [",$_SESSION[items]) . "]; var prices = [" . implode("], [",$_SESSION[prices]) . "]; var quantities = [" . implode("], [",$_SESSION[quantities]) . "];");
+            echo("var items = [" . implode(", ",$_SESSION[items]) . "]; var prices = [" . implode(", ",$_SESSION[prices]) . "]; var quantities = [" . implode(", ",$_SESSION[quantities]) . "];");
         }
         else {
-            echo("var items = []; var prices = [], var quantities = [];");
+            echo("var items = []; var prices = []; var quantities = [];");
         }
-        echo ";</script>";
+        echo "</script>";
     ?>
     <header>
         <div class="title">

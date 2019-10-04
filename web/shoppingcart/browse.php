@@ -55,7 +55,7 @@
         }
     }
 
-    function viewCart(item, price) {
+    function viewCart() {
         $.post("cart.php");
         //document.getElementById("stuff").innerHTML = cart;
     }

@@ -51,7 +51,7 @@
         if (isdone == false) {
             cart.push([item, price, 2]);
         }
-        document.getElementById("stuff").innerHTML = a2;
+        document.getElementById("stuff").innerHTML = cart;
     }
 </script>
 

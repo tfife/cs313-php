@@ -18,7 +18,8 @@
     <?php
         echo "<script>";
         if ($_SESSION[items]) {
-            echo("var items = [" . implode(", ",$_SESSION[items]) . "]; var prices = [" . implode(", ",$_SESSION[prices]) . "]; var quantities = [" . implode(", ",$_SESSION[quantities]) . "];");
+            echo("var items = [" . implode(", ",$_SESSION[items]) . "]; var prices = ["
+             . implode(", ",$_SESSION[prices]) . "]; var quantities = [" . implode(", ",$_SESSION[quantities]) . "];");
         }
         else {
             echo("var items = []; var prices = []; var quantities = [];");
@@ -28,7 +29,7 @@
     <header>
         <div class="title">
             STuff to bUy
-            <img onclick="viewCart()" src="cart_icon.png" style="height: 40px; width: auto; float: right" alt="cart">
+            <a href="cart.php"><img onclick="viewCart()" src="cart_icon.png" style="height: 40px; width: auto; float: right" alt="cart"></a>
         </div>
     </header>
 
@@ -65,10 +66,6 @@
             quantities.push(1);
         }
 
-
-    }
-
-    function viewCart() {
         var cart = {};
         cart.items = items;
         cart.prices = prices;

@@ -37,7 +37,7 @@
     <div>This is where content will appear for the Cart</div>
     <?php
 
-        foreach($i = 0; $i < sizeof($items); i++) {
+        for($i = 0; $i < sizeof($items); i++) {
             echo("<div class='bodyBox'><div class='product'><div> " . $items[$i] . " </div><div>Quantity: " . $quantities[$i] . $prices[i] . " </div></div></div>");
         }
     ?>

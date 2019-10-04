@@ -30,7 +30,7 @@
         <div class="title">
             STuff to bUy
             <a href="cart.php"><img onclick="viewCart()" src="cart_icon.png" style="height: 40px; width: auto; float: right" alt="cart"></a>
-            <div style= "color: white; font-size: 20px"><?php echo(sizeof($_SESSION[items]) ?></div>
+            <div style= "color: white; font-size: 20px"><?php echo(sizeof($_SESSION[items]); ?></div>
         </div>
     </header>
 

@@ -27,10 +27,10 @@
             $quantities = [];
         }
     ?>
-    <header>        
-        <div class="title">
-            View Cart
-            <a href="browse.php" style="font-size: 12px; color: white; float: right">Click Here to return to Browse</a>
+    <header>
+        View Cart
+        <div style="font-size: 12px; color: white; float: right">
+            <a href="browse.php">Click Here to return to Browse</a>
         </div>
     </header>
     <div class="bodyBox">

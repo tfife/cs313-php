@@ -7,6 +7,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="fife_store.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <title>Browse Items</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,7 @@
 
 <body background="images/triangles.jpg">
     <header>
-        <div class="title">STuff to bUy<img onclick="viewCart()" src="cart_icon.png" style="height: 60px; width: auto; float: right" alt="cart"></div>
+        <div class="title">STuff to bUy<img onclick="viewCart()" src="cart_icon.png" style="height: 40px; width: auto; float: right" alt="cart"></div>
 
     </header>
 
@@ -53,7 +54,8 @@
     }
 
     function viewCart(item, price) {
-        document.getElementById("stuff").innerHTML = cart;
+        $.post("cart.php")
+        //document.getElementById("stuff").innerHTML = cart;
     }
 </script>
 

@@ -33,7 +33,7 @@
             <a href="browse.php" style="font-size: 12px; color: white; float: right">Click Here to return to Browse</a>
         </div>
     </header>
-    <table class="table table-hover">
+    <table class="table table-hover" style="border-radius: 50%; width: 70%">
     <thead class="thead-dark">
         <tr>
             <th scope="col">Item</th>

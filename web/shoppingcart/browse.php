@@ -16,14 +16,18 @@
 
 <body>
     <?php
-        echo "<script>";
+        echo "<script>var cart = ";
         if ($_SESSION[cart]) {
-            echo("var cart = " . $_SESSION[cart] . ";");
+            echo("[");
+            foreach(cart as c) {
+                echo("[" . c . "]");
+            }
+            echo("]");
         }
         else {
-            echo("var cart = [];");
+            echo("[]");
         }
-        echo "</script>";
+        echo ";</script>";
     ?>
     <header>
         <div class="title">

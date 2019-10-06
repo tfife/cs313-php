@@ -15,11 +15,28 @@
 
 <body background="images/triangles.jpg">
     <header>
-        <?php include ("navbar_gen.php"); ?>
     </header>
   
     <div class="title">Order Confirmed</div>
-    <div class="bodyBox">Content</div>
+    <div class="bodyBox">
+        Items:
+        <ul>
+        <?php
+            $totalPrice = 0;
+            for($i = 0; $i < sizeof($items); $i++) {
+                $totalPrice += ($prices[$i] * $quantities[$i]);
+                echo("<li>" . $items[$i] . " (Quantity: " . $quantities[$i] . ", Total Price: $" . number_format($prices[$i] * $quantities[$i], 2)
+                 . "</li><br>");
+            }
+        ?>
+        </ul>
+        Total Price: 
+        <?php
+            echo($totalPrice . "<br>");
+        ?>
+</form>
+        <a href="checkout.php"><button>Checkout</button></a>
+    </div>
     <footer>
         Website created by Tori Fife. 10/2019.
     </footer>

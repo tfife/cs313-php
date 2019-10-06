@@ -47,13 +47,13 @@
         <?php
             for($i = 0; $i < sizeof($items); $i++) {
                 echo("<tr><th scope='row'>" . $items[$i] . "</th><td>" . $quantities[$i] . "</td><td>$" . $prices[$i]
-                 . "</td><td>\_/</td></tr>");
+                 . "</td><td><img src='delete.png' style='height: 20px; width: auto'></td></tr>");
             }
         ?>
         </tbody>
         </table>
+        <a href="checkout.php"><button>Checkout</button></a>
     </div>
-    <a href="checkout.php"><button>Checkout</button></a>
 
     <footer>
         Website created by Tori Fife. 10/2019.

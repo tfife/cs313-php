@@ -36,6 +36,10 @@
                 $good = false;
             } else {
                 $_SESSION[name] = test_input($_POST["name"]);
+                if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+                    $nameErr = "Only letters and white space allowed";
+                    $good = false;
+                  }
             }
 
             if (empty($_POST["addr1"])) {

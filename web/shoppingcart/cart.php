@@ -40,14 +40,13 @@
                 <th scope="col">Item</th>
                 <th scope="col">Quantity</th>
                 <th scope="col">Price</th>
-                <th scope="col">Remove</th>
             </tr>
         </thead>
         <tbody>
         <?php
             for($i = 0; $i < sizeof($items); $i++) {
                 echo("<tr><th scope='row'>" . $items[$i] . "</th><td>" . $quantities[$i] . "</td><td>$" . number_format($prices[$i], 2)
-                 . "</td><td><img src='delete.png' style='height: 20px; width: auto'></td></tr>");
+                 . "</td></tr>");
             }
         ?>
         </tbody>

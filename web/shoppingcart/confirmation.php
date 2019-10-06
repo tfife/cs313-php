@@ -37,11 +37,12 @@
             $totalPrice = 0;
             for($i = 0; $i < sizeof($items); $i++) {
                 $totalPrice += ($prices[$i] * $quantities[$i]);
-                echo("<li>" . $items[$i] . " (Quantity: " . $quantities[$i] . ", Price All: $" . number_format($prices[$i] * $quantities[$i], 2)
-                 . "</li><br>");
+                echo("<li>" . $items[$i] . " (Quantity: " . $quantities[$i] . ", Price All: $"
+                 . number_format($prices[$i] * $quantities[$i], 2) . ")</li><br>");
             }
 
-            echo("Address:<br>" . $_SESSION[addr1] . "<br>" . $_SESSION[addr2] . "<br>" . $_SESSION[city] . ", " . $_SESSION[state] . " " . $_SESSION[zip])
+            echo("Ship to:<br>" . $_SESSION[name] . "<br><br>". $_SESSION[addr1] . "<br>"
+             . $_SESSION[addr2] . "<br>" . $_SESSION[city] . ", " . $_SESSION[state] . " " . $_SESSION[zip])
         ?>
         </ul>
         Total Price: $

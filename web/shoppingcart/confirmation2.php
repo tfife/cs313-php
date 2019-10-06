@@ -41,7 +41,7 @@
                  . number_format($prices[$i] * $quantities[$i], 2) . ")</li><br>");
             }
 
-            echo("Ship to:<br>" . $_SESSION[name] . "<br><br>". $_SESSION[addr1] . "<br>")
+            echo("Ship to:<br>" . $_SESSION[name] . "<br><br>". $_SESSION[addr1] . "<br>");
             if ($_SESSION[addr2]) {
                 echo($_SESSION[addr2] . "<br>");
             }

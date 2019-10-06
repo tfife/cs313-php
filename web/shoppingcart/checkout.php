@@ -32,7 +32,7 @@
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (empty($_POST["name"])) {
                 $nameErr = "Name is required";
-                $_SESSION[name] = ""
+                $_SESSION[name] = "";
                 $good = false;
             } else {
                 $_SESSION[name] = test_input($_POST["name"]);

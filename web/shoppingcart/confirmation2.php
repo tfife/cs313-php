@@ -42,7 +42,7 @@
             }
 
             echo("Ship to:<br>" . $_SESSION[name] . "<br><br>". $_SESSION[addr1] . "<br>");
-            if ($_SESSION[addr2]) {
+            if ($_SESSION[addr2] != "") {
                 echo($_SESSION[addr2] . "<br>");
             }
              echo($_SESSION[city] . ", " . $_SESSION[state] . " " . $_SESSION[zip]);

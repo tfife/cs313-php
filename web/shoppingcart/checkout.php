@@ -21,8 +21,8 @@
 
     <?php
         // define variables and set to empty values
-        $addr1Err = $cityErr = $stateErr = "";
-        $ZipErr = $nameErr = "";
+        $addr1Err = $cityErr = $stateErr = $ZipErr = $nameErr = "";
+        $name = $addr1 = $addr2 = $city = $state = $zip = "";
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (empty($_POST["name"])) {
@@ -60,6 +60,13 @@
             } else {
                 $zip = test_input($_POST["zip"]);
             }
+        }
+
+        function test_input($data) {
+            $data = trim($data);
+            $data = stripslashes($data);
+            $data = htmlspecialchars($data);
+            return $data;
         }
     ?>
     <div class="bodyBox" style="text-align: left">

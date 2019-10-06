@@ -42,15 +42,13 @@
             }
             echo("</ul>");
 
-            echo("Ship to:<br>" . $_SESSION[name] . "<br><br>". $_SESSION[addr1] . "<br>");
+            echo("Total Price: $" . $totalPrice . "<br><br>");
+
+            echo("Ship to:<br>" . $_SESSION[name] . "<br>". $_SESSION[addr1] . "<br>");
             if ($_SESSION[addr2] != "") {
                 echo($_SESSION[addr2] . "<br>");
             }
              echo($_SESSION[city] . ", " . $_SESSION[state] . " " . $_SESSION[zip] . "<br>");
-        ?>
-        Total Price: $
-        <?php
-            echo($totalPrice . "<br>");
         ?>
     </div>
 </body>

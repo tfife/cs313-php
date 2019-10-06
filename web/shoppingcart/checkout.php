@@ -92,7 +92,7 @@
             City:<br><input type="text" name="city" value="<?php echo $_SESSION[city];?>"><span class="error">* <?php echo $cityErr;?></span><br>   
             State:<br><input type="text" name="state" value="<?php echo $_SESSION[state];?>"><span class="error">* <?php echo $stateErr;?></span><br>
             Zip:<br><input type="text" name="zip" value="<?php echo $_SESSION[zip];?>"><span class="error">* <?php echo $ZipErr;?></span><br>
-            <button type="submit" name="submit" value="Place Order"></button>
+            <button type="submit" name="submit">Place Order</button>
         </form>
         <a href="cart.php"><button>Return to Cart</button></a>
     </div>

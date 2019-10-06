@@ -13,7 +13,7 @@
     <meta name="description" content="">
 </head>
 
-<body background="images/triangles.jpg">
+<body>
     <header>
     </header>
   
@@ -25,12 +25,12 @@
             $totalPrice = 0;
             for($i = 0; $i < sizeof($items); $i++) {
                 $totalPrice += ($prices[$i] * $quantities[$i]);
-                echo("<li>" . $items[$i] . " (Quantity: " . $quantities[$i] . ", Total Price: $" . number_format($prices[$i] * $quantities[$i], 2)
+                echo("<li>" . $items[$i] . " (Quantity: " . $quantities[$i] . ", Price All: $" . number_format($prices[$i] * $quantities[$i], 2)
                  . "</li><br>");
             }
         ?>
         </ul>
-        Total Price: 
+        Total Price: $
         <?php
             echo($totalPrice . "<br>");
         ?>

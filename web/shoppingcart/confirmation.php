@@ -40,7 +40,7 @@
                 echo("<li>" . $items[$i] . " (Quantity: " . $quantities[$i] . ", Price All: $"
                  . number_format($prices[$i] * $quantities[$i], 2) . ")</li><br>");
             }
-            echo("</ul>")
+            echo("</ul>");
 
             echo("Ship to:<br>" . $_SESSION[name] . "<br><br>". $_SESSION[addr1] . "<br>");
             if ($_SESSION[addr2] != "") {

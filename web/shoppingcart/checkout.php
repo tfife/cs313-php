@@ -72,9 +72,9 @@
     <div class="bodyBox" style="text-align: left">
         <h2>Add Address Information</h2>
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-            Name: <br><input type="text" name="name"><br>
-            Address Line 1<br><input type="text" name="addressLine1" value="<?php echo $name;?>"><span class="error">* <?php echo $addr1Err;?></span><br>
-            Address Line 2<br><input type="text" name="addressLine2" value="<?php echo $addr1;?>"><br>
+            Name: <br><input type="text" name="name" value="<?php echo $name;?>"><span class="error">* <?php echo $nameErr;?></span><br>
+            Address Line 1<br><input type="text" name="addressLine1" value="<?php echo $addr1;?>"><span class="error">* <?php echo $addr1Err;?></span><br>
+            Address Line 2<br><input type="text" name="addressLine2" value="<?php echo $addr2;?>"><br>
             City:<br><input type="text" name="city" value="<?php echo $city;?>"><span class="error">* <?php echo $cityErr;?></span><br>   
             State:<br><input type="text" name="state" value="<?php echo $state;?>"><span class="error">* <?php echo $stateErr;?></span><br>
             Zip:<br><input type="text" name="zip" value="<?php echo $zip;?>"><span class="error">* <?php echo $ZipErr;?></span><br>

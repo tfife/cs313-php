@@ -15,9 +15,21 @@
 
 <body>
     <header>
+        Order Confirmation
+        <div></div>
     </header>
-  
-    <div class="title">Order Confirmed</div>
+    <?php
+        if ($_SESSION[items]) {
+            $items = $_SESSION[items];
+            $prices = $_SESSION[prices];
+            $quantities = $_SESSION[quantities];
+        }
+        else {
+            $items = [];
+            $prices = [];
+            $quantities = [];
+        }
+    ?>
     <div class="bodyBox">
         Items:
         <ul>
@@ -28,14 +40,14 @@
                 echo("<li>" . $items[$i] . " (Quantity: " . $quantities[$i] . ", Price All: $" . number_format($prices[$i] * $quantities[$i], 2)
                  . "</li><br>");
             }
+
+            echo("Address:<br>" . $_SESSION[addr1] . "<br>" . $_SESSION[addr2] . "<br>" . $_SESSION[city] . ", " . $_SESSION[state] . " " . $_SESSION[zip])
         ?>
         </ul>
         Total Price: $
         <?php
             echo($totalPrice . "<br>");
         ?>
-</form>
-        <a href="checkout.php"><button>Checkout</button></a>
     </div>
     <footer>
         Website created by Tori Fife. 10/2019.

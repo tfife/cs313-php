@@ -32,6 +32,7 @@
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (empty($_POST["name"])) {
                 $nameErr = "Name is required";
+                $_SESSION[name] = ""
                 $good = false;
             } else {
                 $_SESSION[name] = test_input($_POST["name"]);
@@ -39,6 +40,7 @@
 
             if (empty($_POST["addr1"])) {
                 $addr1Err = "Address Line is required";
+                $_SESSION[addr1] = "";
                 $good=false;
             } else {
                 $_SESSION[addr1] = test_input($_POST["addr1"]);
@@ -46,12 +48,14 @@
 
             if (empty($_POST["addr2"])) {
                 $addr2 = "";
+                $_SESSION[addr2] = "";
               } else {
                 $_SESSION[addr2] = test_input($_POST["addr2"]);
               }
 
             if (empty($_POST["city"])) {
                 $cityErr = "City is required";
+                $_SESSION[city] = "";
                 $good = false;
             } else {
                 $_SESSION[city] = test_input($_POST["city"]);
@@ -59,13 +63,15 @@
 
             if (empty($_POST["state"])) {
                 $stateErr = "State is required";
+                $_SESSION[state] = "";
                 $good = false;
             } else {
-                $SESSION[state] = test_input($_POST["state"]);
+                $_SESSION[state] = test_input($_POST["state"]);
             }
 
             if (empty($_POST["zip"])) {
                 $ZipErr = "Zip Code is required";
+                $_SESSION[zip] = "";
                 $good = false;
             } else {
                 $_SESSION[zip] = test_input($_POST["zip"]);

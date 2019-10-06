@@ -73,6 +73,7 @@
             Zip:<br><input type="text" name="zip" value="<?php echo $zip;?>"><span class="error">* <?php echo $ZipErr;?></span><br>
             <input type="submit" name="submit" value="Place Order">
         </form>
+        <a href="cart.php"><button>Return to Cart</button></a>
     </div>
 
     <footer>

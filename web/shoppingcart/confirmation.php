@@ -46,7 +46,7 @@
             if ($_SESSION[addr2] != "") {
                 echo($_SESSION[addr2] . "<br>");
             }
-             echo($_SESSION[city] . ", " . $_SESSION[state] . " " . $_SESSION[zip]);
+             echo($_SESSION[city] . ", " . $_SESSION[state] . " " . $_SESSION[zip] . "<br>");
         ?>
         Total Price: $
         <?php

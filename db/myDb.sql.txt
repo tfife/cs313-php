@@ -49,3 +49,10 @@ CREATE TABLE faveDoc
 );
 
 INSERT INTO faveDoc VALUES (1, 2);
+
+
+
+SELECT * FROM profile; -- displays all user information
+
+SELECT * FROM COMMENT
+WHERE doc_id = 2;      -- displays all comments on document 2

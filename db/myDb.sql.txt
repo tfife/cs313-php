@@ -1,0 +1,51 @@
+DROP TABLE profile;
+DROP TABLE document;
+DROP TABLE comment;
+DROP TABLE faveDoc;
+
+CREATE TABLE profile
+(
+    user_id SERIAL NOT NULL PRIMARY KEY,
+    username VARCHAR(80) NOT NULL UNIQUE,
+    password VARCHAR(80) NOT NULL,
+    display_name VARCHAR(80) NOT NULL
+);
+
+INSERT INTO profile(username, password, display_name) VALUES ('torif', 'sneaky123', 'TORI');
+INSERT INTO profile(username, password, display_name) VALUES ('fluffy_fro', 'password', 'Jordan Burdett');
+INSERT INTO profile(username, password, display_name) VALUES ('dMoreno', 'djv8#EE94', 'Uncle Dave');
+
+CREATE TABLE document
+(
+    doc_id SERIAL NOT NULL PRIMARY KEY,
+    doc_text TEXT NOT NULL,
+    user_id INT NOT NULL REFERENCES profile(user_id)
+);
+
+INSERT INTO document(doc_text, user_id) VALUES ('I like my team / ten out of ten / Dave answers texts / but not Jordan', 1);
+INSERT INTO document(doc_text, user_id) VALUES ('Tori is the best team member I have ever had. She does all the work.', 2);
+INSERT INTO document(doc_text, user_id) VALUES ('I like being smart and married.', 3);
+
+CREATE TABLE comment
+(
+    comment_id SERIAL NOT NULL PRIMARY KEY,
+    unread boolean DEFAULT true,
+    comment_text TEXT NOT NULL,
+    user_id INT NOT NULL REFERENCES profile(user_id),
+    doc_id INT NOT NULL REFERENCES document(doc_id)
+);
+
+INSERT INTO comment(comment_text, user_id, doc_id) VALUES ('I answer back! Well, no I guess I do not.', 2, 1);
+INSERT INTO comment(comment_text, user_id, doc_id) VALUES ('You are not THAT smart!', 2, 3);
+INSERT INTO comment(comment_text, user_id, doc_id) VALUES ('Well thank you, Jordan!', 1, 2);
+INSERT INTO comment(comment_text, user_id, doc_id) VALUES ('Dave, you are a quality team member.', 1, 3);
+INSERT INTO comment(comment_text, user_id, doc_id) VALUES ('Haha! That is a good poem.', 3, 1);
+INSERT INTO comment(comment_text, user_id, doc_id) VALUES ('Hey! I do some of the work!', 3, 2);
+
+CREATE TABLE faveDoc
+(
+    user_id INT NOT NULL REFERENCES profile(user_id),
+    doc_id INT NOT NULL REFERENCES document(doc_id)
+);
+
+INSERT INTO faveDoc VALUES (1, 2);

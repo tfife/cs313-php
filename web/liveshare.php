@@ -55,11 +55,11 @@ try {
 <div class="container">
     <div class="shadow p-4 mb-4 bg-white">
         <label for="scripture" class="h3">
-        <div id="scripture">
-            <?php foreach ($db->query('SELECT book, chapter, verse, content FROM Scriptures') as $row) {
-                echo '<p><strong>' . $row["book"] . ' ' . $row["chapter"] . ':' . $row["verse"] . '</strong> - "' . $row["content"] . '"</p>';
-            } ?>
-        </div>
+            <div id="scripture">
+                <?php foreach ($db->query('SELECT book, chapter, verse, content FROM Scriptures') as $row) {
+                    echo '<p><strong>' . $row["book"] . ' ' . $row["chapter"] . ':' . $row["verse"] . '</strong> - "' . $row["content"] . '"</p>';
+                } ?>
+            </div>
     </div>
 </div>
 

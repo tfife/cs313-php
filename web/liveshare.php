@@ -37,9 +37,10 @@ try {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <style>
-        .footer {
+        footer {
+            margin-top: 3em;
             width: 100%;
-            background-color:lightgrey;
+            background-color: lightgrey;
             color: black;
             text-align: center;
         }
@@ -78,9 +79,9 @@ try {
 </div>
 
 
-<div class="footer">
+<footer>
     <h1 class="display-4">Created by Jordan, Dave and Tori</h1>
-</div>
+</footer>
 </body>
 
 </html>

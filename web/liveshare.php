@@ -68,7 +68,7 @@ try {
     <div class="page-header">
         <h3>Search</h3>
     </div>
-    <form action="" method="post">
+    <form>
         <label for="select">Select a Book</label>
         <select id="select" class="form-control">
             <option value="" disabled selected>Book</option>

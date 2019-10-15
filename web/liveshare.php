@@ -50,7 +50,9 @@ try {
 </head>
 
 <header>
-    <h1>Scripture Resource</h1>
+    <div class="jumbotron">
+        ptu class="display-4"re Resource</h1>
+    </div>
 </header>
 <div class="container">
     <div class="shadow p-4 mb-4 bg-white">
@@ -61,6 +63,21 @@ try {
                 } ?>
             </div>
     </div>
+</div>
+
+<div class="container">
+    <div class="page-header">
+        <h3>Search</h3>
+    </div>
+    <form>
+        <label for="select">Select a Book</label>
+        <select id="select" class="form-control">
+            <option value="" disabled selected>Book</option>
+            <?php foreach ($db->query('SELECT UNIQUE book FROM Scriptures') as $row) {
+                echo '<option value="' . $row["book"] . '">' . $row["book"] . '</option>';
+            } ?>
+        </select>
+    </form>
 </div>
 
 

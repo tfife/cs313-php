@@ -61,7 +61,7 @@
             $row = $statement->fetchAll(PDO::FETCH_ASSOC);
             echo var_dump($row);
 
-            echo $row['book'];
+            echo $statement['book'];
             echo '<p><strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong> - "' . $row['content'] . '"</p>';
             ?>
         </div>

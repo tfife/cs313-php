@@ -26,7 +26,6 @@ try {
 
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
     <meta charset="UTF-8">
     <title>Scripture Thing Assignment</title>
@@ -39,6 +38,7 @@ try {
     <style>
         .footer {
             margin-top: 3em;
+            margin-bottom: none;
             width: 100%;
             background-color: lightgrey;
             color: black;
@@ -47,6 +47,7 @@ try {
     </style>
 </head>
 
+<body>
 <header>
     <div class="jumbotron">
         <h1 class="display-4">Scripture Resource</h1>
@@ -67,7 +68,7 @@ try {
     <div class="page-header">
         <h3>Search</h3>
     </div>
-    <form>
+    <form action="" method="post">
         <label for="select">Select a Book</label>
         <select id="select" class="form-control">
             <option value="" disabled selected>Book</option>
@@ -75,6 +76,7 @@ try {
                 echo '<option value="' . $row["book"] . '">' . $row["book"] . '</option>';
             } ?>
         </select>
+        <button id="search" onclick="loadStuff(option.value)">Search</button>
     </form>
 </div>
 
@@ -83,5 +85,14 @@ try {
     <h1 class="display-4">Created by Jordan, Dave and Tori</h1>
 </div>
 
+<script>
+function loadStuff(value) {
+    console.log(value);
+    
+}
 
+
+</script>
+
+</body>
 </html>

@@ -92,7 +92,9 @@ try {
 function loadStuff(value) {
     console.log(value);
     
-    $("#displayScripture").load("loadScripture.php", { 'book': value });
+    $("#displayScripture").load("loadScripture.php", { 'book': value }, function(data, status, jqXGR) {
+        console.log("data loaded");
+    } );
 
 }
 

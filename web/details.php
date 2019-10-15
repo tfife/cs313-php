@@ -58,7 +58,9 @@
         <div id="scripture">
             <?php 
             $statement = $db->query('SELECT book, chapter, verse, content FROM Scriptures WHERE id="' . $id . '"');
+            echo $statement;
             $row = $statement->fetchAll(PDO::FETCH_ASSOC);
+            echo $row;
             echo '<p><strong>' . $row["book"] . ' ' . $row["chapter"] . ':' . $row["verse"] . '</strong> - "' . $row["content"] . '"</p>';
             ?>
         </div>

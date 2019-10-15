@@ -57,7 +57,7 @@ try {
         <label for="scripture" class="h3">
         <div id="scripture">
         <?php foreach ($db->query('SELECT book, chapter, verse, content FROM Scriptures') as $row) {
-            echo '<p><strong>' . $row["book"] . ' ' . $row["chapter"] . ':' .$row["verse"] . '</strong> - \"' . $row["content"] . '\"</p>';
+            echo '<p><strong>' . $row["book"] . ' ' . $row["chapter"] . ':' .$row["verse"] . '</strong> - "' . $row["content"] . '"</p>';
         } ?>
         </div>    
     </div>
@@ -65,8 +65,8 @@ try {
 
 
 <div class="footer">
-    <h1 class="display-4">Created by Jordan burdett</h1>
-    <p>and Dave and Tori</p>
+    <h1 class="display-4">Created by</h1>
+    <p>Dave and Tori</p>
 </div>
 </body>
 

@@ -28,7 +28,7 @@ VALUES
 ( 'Doctrine and Covenants'
 , 88
 , 49
-, 'The alight shineth in darkness, and the darkness comprehendeth it not\; nevertheless, the day shall come when you shall comprehend even God, being quickened in him and by him.');
+, 'The light shineth in darkness, and the darkness comprehendeth it not\; nevertheless, the day shall come when you shall comprehend even God, being quickened in him and by him.');
 
 
 INSERT INTO Scriptures

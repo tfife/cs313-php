@@ -25,6 +25,7 @@ $book = $_POST['book'];
 <div class="container">
     <div class="shadow p-4 mb-4 bg-white">
         <label for="scripture" class="h3">
+        <div id="scripture">
 
 <?php
 foreach ($db->query('SELECT book, chapter, verse, content FROM Scriptures WHERE book=\'' . $book . '\'') as $row) {

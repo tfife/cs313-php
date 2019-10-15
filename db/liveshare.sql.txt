@@ -56,4 +56,4 @@ VALUES
 
 
 SELECT * FROM Scriptures
-WHERE book = 'Doctrine and Covenants';
+WHERE id = 1;

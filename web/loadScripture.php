@@ -28,8 +28,8 @@ $book = $_POST['book'];
         <div id="scripture">
 
 <?php
-foreach ($db->query('SELECT book, chapter, verse, content FROM Scriptures WHERE book=\'' . $book . '\'') as $row) {
-    echo '<p><strong>' . $row["book"] . ' ' . $row["chapter"] . ':' . $row["verse"] . '</strong> - "' . $row["content"] . '"</p>';
+foreach ($db->query('SELECT id, book, chapter, verse FROM Scriptures WHERE book=\'' . $book . '\'') as $row) {
+    echo '<a href="details.php?num=' . $row["id"] . '"><p><strong>' . $row["book"] . ' ' . $row["chapter"] . ':' . $row["verse"] . '</strong></p></a>';
 }
 ?>
         </div>

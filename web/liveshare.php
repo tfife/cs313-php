@@ -50,7 +50,7 @@ try {
 <body>
 <header>
     <div class="jumbotron">
-        <h1 class="display-4">Scripture Resource</h1>
+        <h1 class="display-4">e Resource</h1>
     </div>
 </header>
 <div class="container">
@@ -81,6 +81,8 @@ try {
 
     <div id="displayScripture"></div>
 </div>
+
+
 
 
 <div class="footer">

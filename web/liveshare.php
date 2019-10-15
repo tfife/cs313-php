@@ -42,7 +42,7 @@ try {
             left: 0;
             bottom: 0;
             width: 100%;
-            background-color: grey;
+            background-color:lightgrey;
             color: black;
             text-align: center;
         }
@@ -51,7 +51,7 @@ try {
 
 <header>
     <div class="jumbotron">
-        ptu class="display-4"re Resource</h1>
+        <h1 class="display-4">Scripture Resource</h1>
     </div>
 </header>
 <div class="container">
@@ -73,7 +73,7 @@ try {
         <label for="select">Select a Book</label>
         <select id="select" class="form-control">
             <option value="" disabled selected>Book</option>
-            <?php foreach ($db->query('SELECT UNIQUE book FROM Scriptures') as $row) {
+            <?php foreach ($db->query('SELECT DISTINCT book FROM Scriptures ORDER BY book') as $row) {
                 echo '<option value="' . $row["book"] . '">' . $row["book"] . '</option>';
             } ?>
         </select>

@@ -19,9 +19,8 @@ try {
     die();
 }
 
-$value = $_POST('select');
+$value = $_POST('book');
 
-echo var_dump($_GET);
-echo var_dump($_POST);
+echo $value;
 
 ?>

@@ -29,7 +29,7 @@ $book = $_POST['book'];
 
 <?php
 foreach ($db->query('SELECT id, book, chapter, verse FROM Scriptures WHERE book=\'' . $book . '\'') as $row) {
-    echo '<a href="details.php?num=' . $row["id"] . '"><p><strong>' . $row["book"] . ' ' . $row["chapter"] . ':' . $row["verse"] . '</strong></p></a>';
+    echo '<a href="details.php?id=' . $row["id"] . '"><p><strong>' . $row["book"] . ' ' . $row["chapter"] . ':' . $row["verse"] . '</strong></p></a>';
 }
 ?>
         </div>

@@ -70,13 +70,13 @@ try {
     </div>
     <form>
         <label for="select">Select a Book</label>
-        <select id="select" class="form-control">
+        <select id="select" class="form-control" onchange="loadStuff(select.value)">
             <option value="" disabled selected>Book</option>
             <?php foreach ($db->query('SELECT DISTINCT book FROM Scriptures ORDER BY book') as $row) {
                 echo '<option value="' . $row["book"] . '">' . $row["book"] . '</option>';
             } ?>
         </select>
-        <button type="button" id="search" onclick="loadStuff(select.value)">Search</button>
+        
     </form>
 
     <div id="displayScripture">
@@ -92,9 +92,11 @@ try {
 function loadStuff(value) {
     console.log(value);
     
-    $("#displayScripture").load("loadScripture.php", { 'book': value }, function(data, status, jqXGR) {
-        console.log("data loaded");
-    } );
+    if (value) {
+        $("#displayScripture").load("loadScripture.php", { 'book': value }, function(data, status, jqXGR) {
+            console.log("data loaded");
+        } );
+}
 
 }
 

@@ -76,8 +76,11 @@ try {
                 echo '<option value="' . $row["book"] . '">' . $row["book"] . '</option>';
             } ?>
         </select>
-        <button id="search" onclick="loadStuff(option.value)">Search</button>
+        <button id="search" onclick="loadStuff(select.value)">Search</button>
     </form>
+
+    <div class="displayScripture">
+    </div>
 </div>
 
 
@@ -89,6 +92,8 @@ try {
 function loadStuff(value) {
     console.log(value);
     
+    $()
+
 }
 
 

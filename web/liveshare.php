@@ -76,7 +76,7 @@ try {
                 echo '<option value="' . $row["book"] . '">' . $row["book"] . '</option>';
             } ?>
         </select>
-        <button id="search" onclick="loadStuff(select.value)">Search</button>
+        <button type="button" id="search" onclick="loadStuff(select.value)">Search</button>
     </form>
 
     <div id="displayScripture">

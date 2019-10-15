@@ -1,4 +1,6 @@
 <?php
 session_start();
-echo("hello");
+
+$book = $_POST['book'];
+echo $book;
 ?>

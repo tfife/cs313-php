@@ -65,8 +65,7 @@ try {
 
 
 <div class="footer">
-    <h1 class="display-4">Created by</h1>
-    <p>Dave and Tori</p>
+    <h1 class="display-4">Created by Dave and Tori</h1>
 </div>
 </body>
 

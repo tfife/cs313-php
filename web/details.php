@@ -59,10 +59,7 @@
             <?php 
             $statement = $db->query(('SELECT * FROM Scriptures WHERE id = 1'));
             $row = $statement->fetchAll(PDO::FETCH_ASSOC);
-            echo var_dump($row);
-            echo var_dump($row[0]);
-
-            echo $row[0]['book'];
+            $row = $row[0];
             echo '<p><strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong> - "' . $row['content'] . '"</p>';
             ?>
         </div>

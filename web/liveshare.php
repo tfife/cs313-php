@@ -42,31 +42,31 @@ try {
             left: 0;
             bottom: 0;
             width: 100%;
-            background-color: whitesmoke;
-            color: white;
+            background-color: grey;
+            color: black;
             text-align: center;
         }
     </style>
 </head>
 
 <header>
+<h1>Scripture Resource</h1>
 </header>
 <div class="container">
     <div class="jumbotron">
-        <form>
-            <label for="scripture" class="h3">
-                <select id="scripture" class="form-control">
-                    <?php foreach ($db->query('SELECT book, chapter, verse FROM Scriptures ORDER BY book') as $row) {
-                        echo '<option value="' . $row["year"] . '">' . $row["year"] . '</option>';
-                    } ?>
-                </select>
-        </form>
+        <label for="scripture" class="h3">
+        <div id="scripture">
+        <?php foreach ($db->query('SELECT book, chapter, verse, content FROM Scriptures') as $row) {
+            echo '<p><strong>' . $row["book"] . ' ' . $row["chapter"] . ':' .$row["verse"] . '</strong> - \"' . $row["content"] . '\"</p>';
+        } ?>
+        </div>    
     </div>
 </div>
 
 
 <div class="footer">
-    Website created by the coolest team ever.
+    <h1 class="display-4">Created by Jordan burdett</h1>
+    <p>and Dave and Tori</p>
 </div>
 </body>
 

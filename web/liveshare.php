@@ -38,7 +38,7 @@ try {
     <style>
         .footer {
             margin-top: 3em;
-            margin-bottom: none;
+            margin-bottom: 0;
             width: 100%;
             background-color: lightgrey;
             color: black;
@@ -68,7 +68,8 @@ try {
     <div class="page-header">
         <h3>Search</h3>
     </div>
-    <form>
+    
+    <form style="margin-bottom: 10px;">
         <label for="select">Select a Book</label>
         <select id="select" class="form-control" onchange="loadStuff(select.value)">
             <option value="" disabled selected>Book</option>
@@ -76,11 +77,9 @@ try {
                 echo '<option value="' . $row["book"] . '">' . $row["book"] . '</option>';
             } ?>
         </select>
-        
     </form>
 
-    <div id="displayScripture">
-    </div>
+    <div id="displayScripture"></div>
 </div>
 
 
@@ -95,7 +94,7 @@ function loadStuff(value) {
     if (value) {
         $("#displayScripture").load("loadScripture.php", { 'book': value }, function(data, status, jqXGR) {
             console.log("data loaded");
-        } );
+        });
 }
 
 }

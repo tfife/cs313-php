@@ -57,7 +57,7 @@
         <label for="scripture" class="h3">
         <div id="scripture">
             <?php 
-            $row = $db->query(('SELECT * FROM Scriptures WHERE id = ' . $id));
+            $row = $db->query(('SELECT * FROM Scriptures WHERE id = 1'));
             echo '<p><strong>' . $row["book"] . ' ' . $row["chapter"] . ':' . $row["verse"] . '</strong> - "' . $row["content"] . '"</p>';
             ?>
         </div>

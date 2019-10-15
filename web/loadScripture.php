@@ -21,4 +21,7 @@ try {
 
 $value = $_POST('select');
 
+echo var_dump($_GET);
+echo var_dump($_POST);
+
 ?>

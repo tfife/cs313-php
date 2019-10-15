@@ -79,7 +79,7 @@ try {
         <button id="search" onclick="loadStuff(select.value)">Search</button>
     </form>
 
-    <div class="displayScripture">
+    <div id="displayScripture">
     </div>
 </div>
 
@@ -92,7 +92,7 @@ try {
 function loadStuff(value) {
     console.log(value);
     
-    $()
+    //$("#displayScripture").load("loadScripture.php")
 
 }
 

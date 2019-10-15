@@ -79,9 +79,9 @@ try {
 </div>
 
 
-<footer>
+<div class="footer">
     <h1 class="display-4">Created by Jordan, Dave and Tori</h1>
-</footer>
-</body>
+</div>
+
 
 </html>

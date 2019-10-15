@@ -38,9 +38,6 @@ try {
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <style>
         .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
             width: 100%;
             background-color:lightgrey;
             color: black;

@@ -57,7 +57,7 @@
         <label for="scripture" class="h3">
         <div id="scripture">
             <?php 
-            $statement = $db->query(('SELECT * FROM Scriptures WHERE id = 1'));
+            $statement = $db->query(('SELECT * FROM Scriptures WHERE id = ' . $id));
             $row = $statement->fetchAll(PDO::FETCH_ASSOC);
             $row = $row[0];
             echo '<p><strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong> - "' . $row['content'] . '"</p>';
